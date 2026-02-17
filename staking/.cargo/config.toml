@@ -1,0 +1,8 @@
+[build]
+target-dir = "target"
+
+[env]
+ANCHOR_IDL_BUILD_PROGRAM_PATH = { value = "", relative = false }
+
+[target.'cfg(all())']
+rustflags = ["--cfg", "feature=\"no-idl\""] 
